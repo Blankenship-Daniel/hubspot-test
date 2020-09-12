@@ -1,0 +1,10 @@
+<h1>{{ title }}</h1>
+<button *ngIf="candidates" (click)="submitSchedule()">Create Schedule</button>
+<div class="flex">
+  <pre>
+    {{ candidates | json }}
+  </pre>
+  <pre>
+    {{ schedule | json }}
+  </pre>
+</div>
